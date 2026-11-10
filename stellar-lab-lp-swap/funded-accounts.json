@@ -1,0 +1,33 @@
+{
+  "generatedAt": "2026-11-10T08:19:00.000Z",
+  "network": "testnet",
+  "horizonUrl": "https://horizon-testnet.stellar.org",
+  "networkPassphrase": "Testnet SDF Network ; September 2015",
+  "accounts": {
+    "LP": {
+      "publicKey": "GCHMAQ73HFU76NSAOT4NE46P4LP3AQTIT6LUQA276PBLHXTJUYZ2CNHX",
+      "secretKey": "SCD5XK2VKT366BN6QGYZVLWDKBJKRA6Q6VFPGOVMDJIJWWYA3HQU4WQP",
+      "funded": true,
+      "friendbotResponse": null
+    },
+    "TRADER": {
+      "publicKey": "GCH6VZVV3L3PMMZ7ZIK75XHKBVFYEIUOO2SOEU6XYAMFFXDNHTDIV3VA",
+      "secretKey": "SA2EDTHY6RNUQ4CPR2W6DKUPXO2I3XHW4HICJTI4PUCJMGIUJFEX5ND5",
+      "funded": false,
+      "friendbotResponse": null
+    },
+    "RECIPIENT": {
+      "publicKey": "GAKTXVVI3R4VBTBOWE2NWWIGWQOCU6PUWQ2SVCQCFFJXLZDOZCQZRGQS",
+      "secretKey": "SAMKAH5VG3RQL6NHTO2HWTM2K5JX7CW4QYHZR2VAHFD5NNRHWIDYIQGM",
+      "funded": false,
+      "friendbotResponse": null
+    }
+  },
+  "instructions": [
+    "1. Para TRADER y RECIPIENT: pasa sus Public Keys por Friendbot cuando vuelva a funcionar:",
+    "   https://friendbot.stellar.org?addr=<PUBLIC_KEY>",
+    "2. Para Soroswap testnet, ve a https://faucet.soroswap.finance y solicita USDC + XLM",
+    "3. Copia las variables a .env en stellar-lab-lp-swap/.env",
+    "4. Ejecuta: cd stellar-lab-lp-swap && node orchestrator.js"
+  ]
+}

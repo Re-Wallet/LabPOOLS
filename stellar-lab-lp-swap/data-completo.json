@@ -1,0 +1,65 @@
+{
+  "lab": "stellar-lp-swap-comparison",
+  "network": "testnet",
+  "executed_at": "2026-11-10T10:30:54.335Z",
+  "worlds": {
+    "native": {
+      "error": "The user aborted a request."
+    },
+    "soroban": {
+      "world": "soroban",
+      "pool_type": "soroban_amm",
+      "lp_transferable": true,
+      "lp_standard": "SEP-41",
+      "executed_at": "2026-11-10T10:31:09.410Z",
+      "steps": [
+        {
+          "step": "list_protocols",
+          "protocols": [
+            "soroswap",
+            "sdex",
+            "aqua"
+          ],
+          "success": true
+        },
+        {
+          "step": "get_quote",
+          "quote": {
+            "assetIn": "CDWEFYYHMGEZEFC5TBUDXM3IJJ7K7W5BDGE765UIYQEV4JFWDOLSTOEK",
+            "assetOut": "CDLZFC3SYJYDZT7K67VZ75HPJVIEUVNIXF47ZG2FB2RMQQVU2HHGCYSC",
+            "amount": "100000000",
+            "amountOut": "-399336",
+            "otherAmountThreshold": "-397339",
+            "tradeType": "EXACT_IN",
+            "protocols": [
+              "soroswap"
+            ],
+            "slippageBps": 50,
+            "routePlan": [
+              {
+                "protocol": "soroswap",
+                "pool": "CDWEFYYHMGEZEFC5TBUDXM3IJJ7K7W5BDGE765UIYQEV4JFWDOLSTOEK-CDLZFC3SYJYDZT7K67VZ75HPJVIEUVNIXF47ZG2FB2RMQQVU2HHGCYSC"
+              }
+            ],
+            "platform": "aggregator",
+            "network": "testnet",
+            "expiresAt": "2026-11-10T10:34:09.473Z"
+          },
+          "success": true
+        },
+        {
+          "step": "build_transaction",
+          "built": {
+            "xdr": "AAAAAgAAAACXDR simulated transaction GAMRH3-179430..."
+          },
+          "success": true
+        },
+        {
+          "step": "calculate_incentive",
+          "note": "En Soroswap testnet (mock o real), la quote es simulada. Mide reservas antes/después para calcular incentivo del LP."
+        }
+      ]
+    }
+  },
+  "duration_ms": 15142
+}
